@@ -1,14 +1,10 @@
 #******************************************************************************
 # weler.py
 #******************************************************************************
-# Name: 
-#******************************************************************************
-# Remarks (optional):
-#Eduardo Esteves
-#MTH 3030
+#Eduardo E
 #
 
-#ask user for latitude, longitude and amount of bijes in statiion 1
+#ask user for latitude, longitude, and amount of bikes in station 1
 
 latitude1 = float(input('Enter latitude of station 1: '))
 longitude1 = float(input('Enter longitude of station 1: '))
@@ -20,7 +16,7 @@ latitude2 = float(input('Enter latitude of station 2: '))
 longitude2 = float(input('Enter longitude of station 2: '))
 bikes2 = float(input('Bikes at station 2: '))
 
-#calculate the changes in latitude and logitude for statiosn 1 and 2
+#calculate the changes in latitude and longitude for stations 1 and 2
 
 change_in_latitude1 = 40.740230 - latitude1
 change_in_longitude1 = -73.983766 - longitude1
@@ -49,7 +45,7 @@ print(f'Distance to station 2 = {distance2} ')
 
 
 
-#create a variable for the availibility of bikes
+#create a variable for the availability of bikes
 
 bikes_available1 = False
 bikes_available2= False
@@ -70,7 +66,7 @@ if distance2 < distance1 and distance2 < 3:
     distance2_req = True
 
 
-#decide which station is the most convinient
+#decide which station is the most convenient
 
 
 if distance1_req:
@@ -85,5 +81,6 @@ elif distance2_req:
         print('Station1')
 else:
     print('Neither')
+
 
 
